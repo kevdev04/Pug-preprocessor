@@ -1,0 +1,10 @@
+
+-var tittles = ['Main Topic', 'Sub Topic', 'Sub topic 2', 'Sub topic 3']
+-var user = 'Admin'
+-var links = ['About us','News','Contact']
+mixin box(image,tittle,content)
+	.caja
+		.caja__imagen: img(src="images/"+image, alt="main-image")
+		.caja__contenido 
+			h3=tittle
+			p=content

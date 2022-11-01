@@ -1,0 +1,18 @@
+extend components/mytemplate.pug
+block contents
+		section.intro
+			.intro__imagen: img(src="images/imagen.png", alt="main-image")
+			.intro__contenido
+				h2= tittles[0]
+				p 
+					|	Lorem ipsum dolor,
+					|	sit amet consectetur adipisicing elit.
+					|	Consequatur quidem veritatis doloremque.
+					|	asperiores reprehenderit quae error,
+					|	ea saepe quas cupiditate!
+					span Consequatur quidem veritatis doloremque.
+				a.boton Read More...
+		main.contenido
+			+box('imagen.png', tittles[1],'Lorem ipsum dolor,')
+			+box('imagen.png', tittles[2],'Lorem ipsum dolor,')
+			+box('imagen.png', tittles[3],'Lorem ipsum dolor,')
